@@ -329,12 +329,22 @@ def main() -> None:
 
     gcode_text = "\n".join(gcode_lines)
 
+    
+   1011
     # ── Save file ────────────────────────────────
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     pattern_slug = pattern_names[choice_pattern].replace(" ", "_").replace("(", "").replace(")", "").replace("°", "deg")
     filename = f"scan_{pattern_slug}_{timestamp}.gcode"
 
-    out_path = Path(filename)
+    # Find the repo folder, then create an 'output' path inside it
+    repo_dir = Path(__file__).parent.resolve()
+    output_dir = repo_dir / "output code"
+    
+    # This automatically creates the 'output' folder if it doesn't exist yet
+    output_dir.mkdir(exist_ok=True)
+    
+    # Combine the output folder path with your filename
+    out_path = output_dir / filename
     out_path.write_text(gcode_text, encoding="utf-8")
 
     # ── Summary ──────────────────────────────────
@@ -359,3 +369,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\n\n  Aborted.")
         sys.exit(0)
+
+
