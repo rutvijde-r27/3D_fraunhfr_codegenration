@@ -32,8 +32,8 @@ Z_DOWN_HARD_LIMIT = -13.0  # absolute limit
 SKIRT_DWELL_S = 90  # seconds
 SKIRT_PASSES = 1    # one pass around periphery
 
-# Output folder
-OUTPUT_FOLDER = Path("./gcode_output")
+# Output folder for generated GCode files
+OUTPUT_FOLDER = Path(__file__).parent.resolve() / "output"
 
 
 # ════════════════════════════════════════════════════════════════════════════
