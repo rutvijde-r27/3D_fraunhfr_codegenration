@@ -2,7 +2,7 @@
 
 **Generates precision G-code for electrochemistry plate scanning on modified Anycubic Mega X 3D printers.**
 
-> 📖 For detailed technical information, see [TECHNICAL_MANUAL.md](TECHNICAL_MANUAL.md)
+> 📖 For detailed technical information, see [TECHNICAL_MANUAL(2).md](TECHNICAL_MANUAL(2).md)
 
 ---
 
@@ -147,7 +147,7 @@ project/
 ## 📖 Documentation
 
 - **Quick Start** → You are here
-- **Full Technical Details** → [TECHNICAL_MANUAL.md](TECHNICAL_MANUAL.md)
+- **Full Technical Details** → [TECHNICAL_MANUAL(2).md](TECHNICAL_MANUAL(2).md)
 - **Test Scenarios** → [test_cases.md](test_cases.md)
 
 ---
