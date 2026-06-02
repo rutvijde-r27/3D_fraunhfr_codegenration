@@ -89,19 +89,23 @@ The graphical interface provides a modern, user-friendly wizard with 5 progressi
 **Standard Python Environment:**
 
 ```bash
-cd "C:\Users\rutvi\Downloads\g code gen"
+cd /path/to/project/directory
 python gcode_gui.py
 ```
 
-**Anaconda Environment** (Recommended if using a conda environment like `aphy`):
+Replace `/path/to/project/directory` with your actual project folder path.
+
+**Anaconda Environment** (If using conda):
 
 If your packages are isolated within Anaconda, activate your environment first so the script can access your installed Tkinter and CustomTkinter libraries natively:
 
 ```bash
-conda activate aphy
-cd "C:\Users\rutvi\Downloads\g code gen"
+conda activate your-environment-name
+cd /path/to/project/directory
 python gcode_gui.py
 ```
+
+Replace `your-environment-name` with your actual conda environment name and `/path/to/project/directory` with your project folder.
 
 **Expected Result:** A modern dark-themed GUI window opens with the 5-step wizard interface.
 
@@ -110,9 +114,11 @@ python gcode_gui.py
 For users who prefer terminal-based interaction, the CLI version provides the same functionality through sequential prompts:
 
 ```bash
-cd "C:\Users\rutvi\Downloads\g code gen"
+cd /path/to/project/directory
 python gcode_generator.py
 ```
+
+Replace `/path/to/project/directory` with your actual project folder path.
 
 **Expected Result:** 7 sequential interactive keyboard prompts appear in your terminal console. Answer each prompt to generate your GCode file.
 
